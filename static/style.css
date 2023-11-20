@@ -85,7 +85,7 @@ html, body {
 }
 
 .form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
-    width: 100%;
+    width: 94%;
     padding: 9px 20px;
     text-align: left;
     border: 0;
@@ -99,7 +99,21 @@ html, body {
     transition: all 0.3s ease;
     margin-top: 16px;
 }
-
+.form-content select {
+    width: 35%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
 
 .btn-primary{
     background-color: #4ac767;
