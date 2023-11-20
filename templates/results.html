@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Results</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				padding: 20px;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			.result-container {
+				margin-top: 30px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				padding: 20px;
+			}
+
+			pre {
+				white-space: pre-wrap;
+				word-wrap: break-word;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Results Page</h1>
+
+		<div class="result-container">
+			<h2>Results:</h2>
+			<pre id="result-data"></pre>
+		</div>
+
+		<script>
+			// Retrieve the JSON data passed from Flask backend
+			var jsonData = JSON.parse('{{ data | tojson }}');
+
+			// Display the JSON data in a formatted way
+			var resultDataElement = document.getElementById("result-data");
+			resultDataElement.textContent = JSON.stringify(jsonData, null, 2);
+		</script>
+	</body>
+</html>
