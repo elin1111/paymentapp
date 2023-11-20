@@ -26,6 +26,7 @@ def submit():
     json_data['xversion'] = config['xversion']
     json_data['xsoftwarename'] = config['xsoftwarename']
     json_data['xsoftwareversion'] = config['xsoftwareversion']
+    json_data['xvendorid'] = '183537'
     
 
 
