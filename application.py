@@ -26,7 +26,7 @@ def submit():
     json_data['xversion'] = config['xversion']
     json_data['xsoftwarename'] = config['xsoftwarename']
     json_data['xsoftwareversion'] = config['xsoftwareversion']
-    print(json_data)
+    
 
 
         # Check if both URL and JSON object are present in the request
