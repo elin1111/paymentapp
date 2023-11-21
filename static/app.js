@@ -126,9 +126,16 @@ function handle3DSResults(
     xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = function () {
-        console.log(xhr.response)
+        console.log (xhr.response)
+        }
+        
     }
+    
+    xhr.send(jsonData); // Send the request
+
     xhr.send(jsonData)
+
+
     // $.ajax({
     //     method: "POST",
     //     url: url,
@@ -142,4 +149,3 @@ function handle3DSResults(
     //         console.log(xhr, status, err);
     //         // handle a failure
     //     });
-}
