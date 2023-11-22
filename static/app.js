@@ -71,8 +71,11 @@ function process(formElement) {
         }
         
     };
-    xhr.send(jsonData);
-    return "submited" ;
+    xhr.send(jsonData);{
+    return "Submited" ;
+    }
+
+    console.log 
 }
 
 let style = {
@@ -137,9 +140,9 @@ function handle3DSResults(
         
     }
     
-    xhr.send(jsonData); // Send the request
+    //xhr.send(jsonData); // Send the request
 
-    xhr.send(jsonData)
+    //xhr.send(jsonData)
 
 
     // $.ajax({
