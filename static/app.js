@@ -72,7 +72,7 @@ function process(formElement) {
         
     };
     xhr.send(jsonData);{
-    return "Submited" ;
+    return "Submited!" ;
     }
 
     console.log 
