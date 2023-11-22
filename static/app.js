@@ -16,6 +16,7 @@ paymentForm.addEventListener("submit", function (e) {
             console.log(cardField.value, cvvField.value);
             console.log(process(paymentForm));
             //document.getElementById('payment-form').submit();
+            submitBtn.disabled = false;
         },
         function () {
             //onError
