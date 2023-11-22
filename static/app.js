@@ -14,9 +14,11 @@ paymentForm.addEventListener("submit", function (e) {
         function () {
             console.log("Success");
             console.log(cardField.value, cvvField.value);
-            console.log(process(paymentForm));
+            x = process(paymentForm);
+            console.log(x)
             //document.getElementById('payment-form').submit();
             submitBtn.disabled = false;
+            showBanner(x);
         },
         function () {
             //onError
@@ -65,9 +67,12 @@ function process(formElement) {
         } else {
             // transaction is complete and no further processing is necessary
             console.log(response);
+            
         }
+        
     };
     xhr.send(jsonData);
+    return "submited" ;
 }
 
 let style = {
@@ -150,3 +155,16 @@ function handle3DSResults(
     //         console.log(xhr, status, err);
     //         // handle a failure
     //     });
+
+    function showBanner(message) {
+        var banner = document.getElementById("banner");
+        banner.style.display = "block";
+       var bannerMessage = document.getElementById("bannerMessage");
+       bannerMessage.textContent = message;
+        
+      }
+      
+      function closeBanner() {
+        var banner = document.getElementById("banner");
+        banner.style.display = "none";
+      }
